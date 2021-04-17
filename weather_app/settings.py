@@ -78,10 +78,22 @@ WSGI_APPLICATION = 'weather_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dch0mcoa6q0frd',
+        'USER':'ykoadvvxljxqow',
+        'PASSWORD':'99e086f2786e937857ae4f219ca1ecceb121d660e1fd4817261e7f6beff6b5db',
+        'HOST':'ec2-52-87-107-83.compute-1.amazonaws.com',
+        'PORT':'5432',
     }
 }
 
